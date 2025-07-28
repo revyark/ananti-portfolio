@@ -5,45 +5,70 @@ const App = () => {
   // --- DATA ---
   const projects = [
     {
-      title: "Stock Sentinel",
-      description: "A stock market monitoring tool using the MERN stack.",
-      details: "Features real-time data, customizable watchlists, and advanced charting to help users make informed trading decisions.",
-      link: "https://github.com/revyark/Stock-Sentinel"
+      title: "Staybooker",
+      description: "Developed my full stack skills by building a property listing website where one can host and book properties",
+      details: "Tech Stack: React.j,Flask,sqlite,stripe",
+      link: "https://github.com/revyark/Property-listing-website"
     },
     {
-      title: "Quick-Fix",
-      description: "A platform to connect users with home service providers.",
-      details: "A full-stack app with appointment scheduling, user ratings, and a seamless interface for finding local service professionals.",
-      link: "https://github.com/revyark/Quick-Fix"
+      title: "Cars Only Website",
+      description: "Cars gallery website for car enthusiasts",
+      details: "Tech Stack: HTML5, CSS3, JavaScript (Vanilla),Unsplash API,Firebase",
+      link: "https://revyark.github.io/CarsOnly-Website/"
     },
     {
-      title: "Legal-Link",
-      description: "A secure platform for legal services and consultations.",
-      details: "Connects clients with legal professionals, featuring secure user auth, case management, and an integrated payment gateway.",
-      link: "https://github.com/revyark/Legal-Link"
+      title: "Blockshield",
+      description: "Hackathon Project-A blockchain-based, tokenized rate-limiting system that defends servers against bot abuse, spam, and DDoS attacks.I worked on smart contracts and backend",
+      details: "Tech Stack: Frontend: React.js,Express.js,Solidity, Hardhat, Ethers.js,MongoDB,MetaMask",
+      link: "https://github.com/revyark/vajra"
     },
     {
-        title: "Ann-Shop",
-        description: "A modern, full-featured e-commerce platform.",
-        details: "A complete e-commerce solution with product catalogs, shopping cart, and secure checkout, built with a Node.js backend.",
-        link: "https://github.com/revyark/Ann-Shop"
+        title: "Feature Matching without the use of Machine Learning",
+        description: "Using classical computer vision algorithms to find and connect corresponding points of interest between two different images",
+        details: "Tech Stack: Language- Python,Libraries- OpenCV-Python (for feature detection/matching), NumPy (for numerical operations), Matplotlib (for visualization)",
+        link: "https://github.com/revyark/Feature-Matching_Without-ML"
+    },
+    {
+        title: "Cost Optimisation of power system networks",
+        description: "Designing a power system networks,running simulations and optimisting the cost of power flow while upholding the security constraints",
+        details: "Tech Stack: GAMS Software,Power world Simulator",
+        link: "https://github.com/revyark/GAMS-Cost_optimisation_project"
     }
   ];
 
-  const skills = ["React", "Node.js", "Express", "MongoDB", "JavaScript", "Next.js", "Tailwind CSS", "Git", "Figma", "Firebase"];
+  const skills = ["React", "Node.js", "Express", "MySQL", "JavaScript", "Next.js", "Tailwind CSS", "Git", "Figma", "Firebase","Flask","Hardhat","Solidity","GAMS Software"];
   const experiences = [
     {
-      title: "Full Stack Developer Intern",
-      company: "CodSoft",
-      duration: "June 2024 - Present",
-      description: "Developing and maintaining web applications using the MERN stack, contributing to both front-end and back-end development cycles and collaborating with a team to build scalable features."
+      title: "Web Developer Intern",
+      company: "Tycho-Tecnologies",
+      duration: "May 2025 - June 2025",
+      description: "Developing and maintaining web applications , contributing to both front-end and back-end development cycles and collaborating with a team to build scalable features."
+    },
+    {
+      title: "Project Intern",
+      company: "GRID India",
+      duration: "June 2024 - July 2024",
+      description: "Cost optimisation of power system networks upholding the security constraints in GAMS Software."
     }
   ];
   const education = [
     {
       institution: "Vellore Institute of Technology",
       degree: "B.Tech in Computer Science",
-      duration: "2021 - 2025"
+      duration: "2023 - 2027",
+      percentage: "9.27 cgpa"
+    },
+    {
+      institution: "Delhi Public School RK Puram",
+      degree: "Senior Secondary",
+      duration: "2020 - 2022", 
+      percentage: "93.4%"
+    },
+    {
+      institution: "Delhi Public School RK Puram",
+      degree: "Secondary",
+      duration: "2018 - 2020", 
+      percentage: "96.8%"
     }
   ];
   const socialLinks = {
@@ -164,6 +189,7 @@ const App = () => {
                             <h3 className="text-2xl font-semibold text-white">{edu.institution}</h3>
                             <p className="text-purple-400 text-lg">{edu.degree}</p>
                             <p className="text-gray-400">{edu.duration}</p>
+                            {edu.percentage && <p className="text-gray-400">Percentage: {edu.percentage}</p>}
                         </div>
                     ))}
                 </div>
