@@ -45,6 +45,12 @@ const App = () => {
       description: "Developing and maintaining web applications , contributing to both front-end and back-end development cycles and collaborating with a team to build scalable features."
     },
     {
+      title: "Joint Secretary",
+      company: "Cloudops",
+      duration: "August 2024-Present",
+      description: "Leveraging my technical background in cloud operations to understand and guide projects"
+    },
+    {
       title: "Project Intern",
       company: "GRID India",
       duration: "June 2024 - July 2024",
